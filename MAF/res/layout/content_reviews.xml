@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical" >
+    
+     <include layout="@layout/content_toolbar" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+           >
+
+            <ImageView
+                android:id="@+id/bgimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+
+            <ListView
+                android:id="@+id/reviewslistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99000000">
+
+            </ListView>
+            
+             <TextView
+                android:id="@+id/noreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="No Reviews"
+                android:textColor="@color/white"
+                android:visibility="gone">
+
+            </TextView>
+            
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/book"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/lightdarkgrey"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/calendarimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Write your Review"
+
+
+                android:textColor="#305496"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

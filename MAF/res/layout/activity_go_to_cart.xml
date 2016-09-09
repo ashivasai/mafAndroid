@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zambient.maf.GoToCartActivity"
+    android:orientation="vertical" >
+	
+    <include layout="@layout/content_toolbargotocart" />
+
+    <ListView
+        android:id="@+id/cartItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.96"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:id="@+id/priceLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Total Amount Rs"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cartAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="230"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/placeOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Place Order"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:gravity="end|center_vertical"
+            
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

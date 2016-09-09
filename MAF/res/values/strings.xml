@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MAF</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    <string name="title_activity_doctors_list">DoctorsListActivity</string>
+    <string name="title_activity_appointment">AppointmentActivity</string>
+    <string name="title_activity_services">ServicesActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_doctors_list_details">DoctorsListDetails</string>
+    <string name="title_activity_services_list_details">ServicesListDetails</string>
+    <string name="title_activity_products">ProductsActivity</string>
+    <string name="title_activity_reviews">ReviewsActivity</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="title_activity_promotions">PromotionsActivity</string>
+    <string name="title_activity_promotions_details">PromotionsDetailsActivity</string>
+    <string name="title_activity_store_locator">StoreLocatorActivity</string>
+    <string name="title_activity_ask_expert">AskExpert</string>
+    <string name="title_activity_products_summary">ProductsSummary</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_go_to_cart">GoToCartActivity</string>
+
+</resources>

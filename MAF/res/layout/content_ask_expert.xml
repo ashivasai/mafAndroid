@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical" >
+    
+     <include layout="@layout/content_toolbar" />
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/bgimage"
+        />
+
+    <LinearLayout
+        android:id="@+id/asklayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:orientation="vertical"
+       android:gravity="center"
+
+        android:padding="15dp"
+       >
+        <EditText
+            android:id="@+id/mailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/logintextborderwhite"
+            android:hint="*Your Mail id"
+            android:lines="1"
+            android:textColorHint="@color/white"
+            android:gravity="start"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp"
+          android:textSize="17sp"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logintextborderwhite"
+            android:layout_marginBottom="20dp"
+            android:padding="3dp"
+
+            />
+        <EditText
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="7"
+            android:textColor="@color/white"
+            android:background="@drawable/logintextborderwhite"
+            android:hint="*Write your Query"
+            android:textColorHint="@color/white"
+            android:gravity="start"
+            android:paddingTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="5dp"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:background="@drawable/logintextborderwhite"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/knowmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Know More About Expert"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/wallet_holo_blue_light"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#99000000">
+
+    </ListView>
+
+</FrameLayout>
+</LinearLayout>

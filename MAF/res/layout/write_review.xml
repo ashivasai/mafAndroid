@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/reviewlayout"
+    android:gravity="center"
+    android:background="#80000000"
+    android:padding="15dp"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cross24"
+        android:layout_gravity="end"
+        android:padding="5dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="center|center_horizontal">
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            />
+
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/logintextborder"
+            android:hint="*Title"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="7"
+            android:background="@drawable/logintextborder"
+            android:hint="*Write your Comment..."
+            android:gravity="start"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="17sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/grey"
+            android:layout_weight="0.5"
+            android:text="Cancel"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:textColor="@color/darkblue"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:background="@color/grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="1dp"
+            android:padding="10dp"
+            android:text="Submit"
+            android:gravity="center"
+            android:textColor="@color/darkblue"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
