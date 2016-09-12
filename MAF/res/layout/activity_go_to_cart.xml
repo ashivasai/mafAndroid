@@ -15,10 +15,11 @@
         android:layout_weight="0.96"
         android:background="@color/grey"
         android:gravity="center"
+        
         android:padding="5dp" />
 
     <LinearLayout
-        android:id="@+id/priceLinear"
+        android:id="@+id/placeOrderLinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.04"

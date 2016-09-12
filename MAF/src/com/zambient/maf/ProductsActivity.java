@@ -35,6 +35,7 @@ import com.zambient.utils.Utils;
 public class ProductsActivity extends AppCompatActivity {
     GridView gridView;
     private Context context;
+    private MainGoToCartDto mainGoToCartDto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,7 +79,7 @@ public class ProductsActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(ProductsActivity.this, GoToCartActivity.class);
-	            //i.putExtras(sendBundle);
+	            i.putExtra("cartDetails",mainGoToCartDto);
 	            startActivity(i); 
 				
 			}
@@ -125,6 +126,7 @@ public class ProductsActivity extends AppCompatActivity {
 		nocartItems.setText(mainGoToCartDto.getNoOfItems());
 		if(mainGoToCartDto.getTotalCost()!=null)
 			cartAmt.setText("Rs. "+mainGoToCartDto.getTotalCost());
+		this.mainGoToCartDto=mainGoToCartDto;
 		
 	}
 }

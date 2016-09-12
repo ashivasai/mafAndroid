@@ -1,16 +1,47 @@
 package com.zambient.maf;
 
+import com.zambient.adapters.GoToCartListAdapter;
+import com.zambient.adapters.ProductsListAdapter;
+import com.zambient.constants.AppConstants;
+import com.zambient.dtos.MainGoToCartDto;
+
 import android.app.Activity;
+import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 
 public class GoToCartActivity extends Activity {
+	private MainGoToCartDto mainGoToCartDto;
+	private Context context;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_go_to_cart);
+		context=this;
+		init();
+	}
+
+	private void init() {
+		FrameLayout titlebarlinear =(FrameLayout)findViewById(R.id.titlebarlinear);
+		titlebarlinear.setBackgroundColor(Color.parseColor(AppConstants.APP_COLOR));
+		LinearLayout placeOrderLinear = (LinearLayout)findViewById(R.id.placeOrderLinear);
+		placeOrderLinear.setBackgroundColor(Color.parseColor(AppConstants.APP_COLOR));
+		
+		mainGoToCartDto= (MainGoToCartDto) getIntent().getSerializableExtra("cartDetails");
+		setData();
+	}
+
+	private void setData() {
+		ListView cartItems = (ListView)findViewById(R.id.cartItems);
+		 GoToCartListAdapter adapter= new GoToCartListAdapter(mainGoToCartDto.getCartProducts(),context);
+		 cartItems.setAdapter(adapter);
+		
 	}
 
 	@Override

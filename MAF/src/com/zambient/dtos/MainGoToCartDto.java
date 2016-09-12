@@ -1,8 +1,9 @@
 package com.zambient.dtos;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class MainGoToCartDto {
+public class MainGoToCartDto implements Serializable{
 
 	private String totalCost;
 	
